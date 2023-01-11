@@ -12,9 +12,7 @@
         table{
             border-collapse: collapse;
         }
-        th{
-            background-color: gray;
-            color: white;
+        th{            
             border: 1px solid black;        
             padding: 10px;        
         }
@@ -22,25 +20,32 @@
             border: 1px solid black;
             padding: 10px;            
         }
+        tr.destaque{
+            background-color: white;
+        }
+        tr.color{
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <h1>Desafio 14</h1>
     <table>
         <thead>
-            <tr>
+            <tr class="color">
                 <th rowspan="2" scope="colgroup">Áreas</th>
                 <th rowspan="2" scope="colgroup">Disciplina</th>
                 <th colspan="2"scope="colgroup">Nota</th>
                 <th rowspan="2" scope="colgroup">Média</th>                
             </tr>
-            <tr>              
+            <tr class="color">              
                 <th scope="colgroup">Nota 1</th>
                 <th scope="colgroup">Nota 2</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="destaque">
                 <th rowspan="4" scope="rowgroup"
                 >Exatas</th>
                 <td>Matemática</td>
@@ -66,7 +71,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr class="color">
                 <th  colspan="4" scope="row">Médias Exatas</th>
                 <th>0.0</th>
             </tr>
@@ -83,7 +88,7 @@
                 <td>0.0</td>
                 <td>0.0</td> 
             </tr>
-            <tr>
+            <tr class="color">
                 <th  colspan="4" scope="row">Médias Humanas</th>
                 <th>0.0</th>
             </tr>
